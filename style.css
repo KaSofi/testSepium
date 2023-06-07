@@ -1,0 +1,177 @@
+#catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 40px;
+    gap: 15px;
+    margin: 0 auto;
+    width: 1410px;
+    height: 1196px;
+    left: calc(50% - 1410px/2);
+    margin-top: 15px;
+    background-color: #edeef5;
+    border-radius: 20px;
+}
+.titleBlockPosition {
+    display: flex;
+}
+.titleBlockPosition p {
+    width: 261px;
+    height: 72px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #787878;
+    font-family: 'Manrope', sans-serif;
+    margin-left: 20px;
+}
+.titleBlockPosition h2 {
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 64px;
+    color: #181818;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-style: normal;
+    letter-spacing: -0.03em;
+    margin: auto;
+    text-align: center;
+    width: 882px;
+    height: 64px;
+    margin-left: 60px;
+}
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.blockOfItemsCards {
+    margin-top: 20.7px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    padding: 0px;
+    gap: 15px;
+    height: 284px;
+}
+.itemCard {
+    height: 284px;
+    width: 321.25px;
+    border-radius: 20px;
+    padding: 7px, 7px, 10px, 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+}
+.biggerHeight {
+    height: 311px;
+}
+.marginTop {
+    margin-top: 25px;
+}
+.itemCard img {
+    width: 307.25px;
+    height: 184px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.frameDescription {
+    width: 307.25px;
+    height: 73px;
+    top: 201px;
+    left: 7px;
+    padding: 10px;
+}
+.frameDescription p {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16.39px;
+    text-align: right;
+    color: #787878;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 62px;
+    height: 16px;
+    left: 10px;
+}
+.frameDescription h4 {
+    width: 287.25px;
+    height: 27px;
+    top: 36px;
+    left: 10px;
+    color: #181818;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27.32px;
+    margin-top: -1px;
+}
+.uniq p {
+    margin-top: -20px;
+}
+a {
+    text-decoration: none;
+} 
+
+@media all and (max-width: 1600px) {
+    #catalog {
+        padding: 0px;
+    }
+}
+
+@media all and (max-width: 1414px) {
+    .blockOfItemsCards {
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+    }
+    #catalog {
+        max-width: 98%;
+        height: 100%;
+        padding: 10px 10px;
+    }
+    .titleBlockPosition {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .titleBlockPosition p {
+        margin-left: 0px;
+    }
+    .titleBlockPosition h2 {
+        font-size: 42px;
+        margin: 0 auto;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .cards {
+        min-height: 100%;
+    }
+    .marginTop {
+        margin-top: 0px;
+    }
+}
+
+@media all and (max-width: 1414px) {
+    .titleBlockPosition h2 {
+        font-size: 32px;
+        line-height: 34px;
+    }
+    .titleBlockPosition p {
+        font-size: 12px;
+        text-align: center;
+    }
+    #catalog {
+        padding: 0px 0px;
+    }
+}
